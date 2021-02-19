@@ -1,0 +1,30 @@
+{
+	"name": "sequelize",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "babel src --out-dir dist",
+		"start": "node dist/index.js",
+		"dev": "nodemon src/index.js --exec babel-node"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
+		"concurrently": "^5.3.0",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"morgan": "^1.10.0",
+		"pg": "^8.5.1",
+		"pg-hstore": "^2.3.3",
+		"sequelize": "^6.5.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.17",
+		"@babel/core": "^7.12.17",
+		"@babel/node": "^7.12.17",
+		"@babel/preset-env": "^7.12.17"
+	}
+}
