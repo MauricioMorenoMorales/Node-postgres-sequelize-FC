@@ -1,3 +1,4 @@
+require('dotenv').config()
 import express from 'express'
 import morgan from 'morgan'
 const app = express()
@@ -7,7 +8,7 @@ import projectRoutes from './routes/projects.routes'
 import taskRoutes from './routes/tasks.routes'
 
 //Settings
-app.set('port', )
+app.set('port', process.env.PORT || 5555)
 
 //Middlewares
 app.use(express.json())
