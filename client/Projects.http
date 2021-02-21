@@ -1,0 +1,14 @@
+@host = http://localhost:4444/api/projects
+
+GET {{host}}
+
+###
+POST {{host}}
+Content-Type: application/json
+
+{
+	"name":"prject testing",
+	"priority":3,
+	"description":"this is a test project",
+	"deliverydate":"2020-03-03"
+}
